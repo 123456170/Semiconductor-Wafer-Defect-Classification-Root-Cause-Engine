@@ -140,8 +140,7 @@ CSS = """
  linear-gradient(90deg,rgba(100,116,139,.06) 1px,transparent 1px);
  background-size:44px 44px;}
 [data-testid="stHeader"]{background:transparent;}
-#MainMenu,footer{visibility:hidden;}
-[data-testid="stToolbar"]{display:none;}
+footer{visibility:hidden;}
 .block-container{padding-top:1.1rem;max-width:1520px;}
 [data-testid="stSidebar"]{background:linear-gradient(180deg,#ffffff,#f1f5f9);
  border-right:1px solid #e2e8f0;color:#0f172a;}
