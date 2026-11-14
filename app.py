@@ -132,71 +132,70 @@ WIDGET_DEFAULTS: dict[str, Any] = {
 CSS = """
 <style>
 .stApp{background:
- radial-gradient(1100px 700px at 88% -12%, rgba(109,40,217,.07), transparent 60%),
- radial-gradient(900px 650px at -8% 108%, rgba(8,145,178,.08), transparent 55%),
- linear-gradient(180deg,#f8fafc 0%,#eef2f9 55%,#f8fafc 100%);color:#0f172a;}
+ radial-gradient(1100px 700px at 88% -12%, rgba(139,92,246,.16), transparent 60%),
+ radial-gradient(900px 650px at -8% 108%, rgba(34,211,238,.12), transparent 55%),
+ linear-gradient(180deg,#070c18 0%,#0a1226 55%,#070c18 100%);color:#dbe7ff;}
 .stApp::before{content:"";position:fixed;inset:0;z-index:0;pointer-events:none;
- background-image:linear-gradient(rgba(100,116,139,.06) 1px,transparent 1px),
- linear-gradient(90deg,rgba(100,116,139,.06) 1px,transparent 1px);
+ background-image:linear-gradient(rgba(103,132,204,.05) 1px,transparent 1px),
+ linear-gradient(90deg,rgba(103,132,204,.05) 1px,transparent 1px);
  background-size:44px 44px;}
 [data-testid="stHeader"]{background:transparent;}
 footer{visibility:hidden;}
 .block-container{padding-top:1.1rem;max-width:1520px;}
-[data-testid="stSidebar"]{background:linear-gradient(180deg,#ffffff,#f1f5f9);
- border-right:1px solid #e2e8f0;color:#0f172a;}
-h1,h2,h3{color:#0f172a;letter-spacing:.2px;}
+[data-testid="stSidebar"]{background:linear-gradient(180deg,#0a1224,#0b1430);
+ border-right:1px solid rgba(103,132,204,.22);color:#dbe7ff;}
+h1,h2,h3{color:#eaf2ff;letter-spacing:.2px;}
 .hdr{display:flex;align-items:center;justify-content:space-between;gap:12px;
- flex-wrap:wrap;padding:12px 16px;border:1px solid #e2e8f0;
- border-radius:16px;margin-bottom:12px;box-shadow:0 1px 3px rgba(15,23,42,.06);
- background:linear-gradient(90deg,rgba(8,145,178,.08),rgba(109,40,217,.07),rgba(219,39,119,.06)),#ffffff;}
-.hdr-title{background:linear-gradient(90deg,#0891b2,#6d28d9 55%,#db2777);
+ flex-wrap:wrap;padding:12px 16px;border:1px solid rgba(103,132,204,.25);
+ border-radius:16px;margin-bottom:12px;
+ background:linear-gradient(90deg,rgba(34,211,238,.09),rgba(139,92,246,.09),rgba(255,45,120,.07));}
+.hdr-title{background:linear-gradient(90deg,#22d3ee,#8b5cf6 55%,#ff2d78);
  -webkit-background-clip:text;background-clip:text;color:transparent;
  font-weight:800;font-size:1.35rem;line-height:1.2;}
-.hdr-sub{color:#64748b;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;}
+.hdr-sub{color:#8fa3c8;font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;}
 .kpi-grid{display:flex;gap:10px;flex-wrap:wrap;margin:4px 0 12px;}
 .kpi{flex:1 1 150px;min-width:150px;position:relative;overflow:hidden;
- background:#ffffff;border:1px solid #e2e8f0;border-radius:14px;padding:11px 14px;
- box-shadow:0 1px 3px rgba(15,23,42,.06);}
+ background:linear-gradient(160deg,rgba(34,211,238,.07),rgba(139,92,246,.06)),#0d1628;
+ border:1px solid rgba(103,132,204,.22);border-radius:14px;padding:11px 14px;}
 .kpi::after{content:"";position:absolute;left:0;top:0;height:2px;width:100%;
- background:linear-gradient(90deg,#0891b2,#6d28d9,#db2777);opacity:.8;}
-.kpi-l{font-size:.63rem;text-transform:uppercase;letter-spacing:.12em;color:#64748b;}
+ background:linear-gradient(90deg,#22d3ee,#8b5cf6,#ff2d78);opacity:.75;}
+.kpi-l{font-size:.63rem;text-transform:uppercase;letter-spacing:.12em;color:#8fa3c8;}
 .kpi-v{font-size:1.4rem;font-weight:800;font-family:ui-monospace,Consolas,monospace;margin-top:2px;}
-.kpi-d{font-size:.68rem;color:#64748b;margin-top:1px;}
-.evt{border-left:3px solid #2563eb;background:#ffffff;padding:6px 10px;
- border-radius:8px;margin-bottom:6px;font-size:.79rem;line-height:1.35;
- box-shadow:0 1px 2px rgba(15,23,42,.05);}
-.evt-t{color:#64748b;font-family:ui-monospace,Consolas,monospace;margin-right:8px;font-size:.7rem;}
-.reason{background:#ffffff;border:1px solid #e2e8f0;
- border-left:3px solid #6d28d9;border-radius:12px;padding:12px 15px;
- font-size:.84rem;line-height:1.55;color:#1e293b;}
+.kpi-d{font-size:.68rem;color:#8fa3c8;margin-top:1px;}
+.evt{border-left:3px solid #60a5fa;background:rgba(13,22,40,.75);padding:6px 10px;
+ border-radius:8px;margin-bottom:6px;font-size:.79rem;line-height:1.35;}
+.evt-t{color:#8fa3c8;font-family:ui-monospace,Consolas,monospace;margin-right:8px;font-size:.7rem;}
+.reason{background:#0d1628;border:1px solid rgba(103,132,204,.25);
+ border-left:3px solid #8b5cf6;border-radius:12px;padding:12px 15px;
+ font-size:.84rem;line-height:1.55;color:#d7e3fb;}
 .panel-tag{font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
- color:#0891b2;font-weight:700;margin:6px 0 2px;}
-.stButton>button{background:#ffffff;color:#0f172a;
- border:1px solid rgba(8,145,178,.45);border-radius:10px;font-weight:600;
+ color:#22d3ee;font-weight:700;margin:6px 0 2px;}
+.stButton>button{background:linear-gradient(160deg,#10203c,#0d1830);color:#dbe7ff;
+ border:1px solid rgba(34,211,238,.35);border-radius:10px;font-weight:600;
  transition:all .15s ease;}
-.stButton>button:hover{border-color:#0891b2;color:#0891b2;
- box-shadow:0 2px 10px rgba(8,145,178,.2);transform:translateY(-1px);}
-.stButton>button[kind="primary"]{background:linear-gradient(90deg,#0891b2,#6d28d9);
+.stButton>button:hover{border-color:#22d3ee;color:#22d3ee;
+ box-shadow:0 0 14px rgba(34,211,238,.25);transform:translateY(-1px);}
+.stButton>button[kind="primary"]{background:linear-gradient(90deg,#0891b2,#7c3aed);
  color:#fff;border:none;}
-.stButton>button[kind="primary"]:hover{color:#fff;box-shadow:0 2px 14px rgba(109,40,217,.35);}
+.stButton>button[kind="primary"]:hover{color:#fff;box-shadow:0 0 18px rgba(139,92,246,.45);}
 .stButton>button:disabled{opacity:.4;transform:none;box-shadow:none;}
-[data-baseweb="select"]>div,input,textarea{background:#ffffff !important;
- color:#0f172a !important;border-color:#cbd5e1 !important;}
-[data-testid="stSlider"] div[role="slider"]{background:#0891b2;border-color:#0891b2;}
-[data-testid="stDataFrame"]{border:1px solid #e2e8f0;border-radius:12px;}
-[data-testid="stExpander"]{border:1px solid #e2e8f0;border-radius:12px;
- background:#ffffff;}
+[data-baseweb="select"]>div,input,textarea{background:#0e1a31 !important;
+ color:#dbe7ff !important;border-color:rgba(103,132,204,.3) !important;}
+[data-testid="stSlider"] div[role="slider"]{background:#22d3ee;border-color:#22d3ee;}
+[data-testid="stDataFrame"]{border:1px solid rgba(103,132,204,.25);border-radius:12px;}
+[data-testid="stExpander"]{border:1px solid rgba(103,132,204,.25);border-radius:12px;
+ background:rgba(13,22,40,.55);}
 .stTabs [data-baseweb="tab-list"]{gap:4px;}
-.stTabs button[role="tab"]{color:#64748b;font-weight:600;}
-.stTabs button[aria-selected="true"]{color:#0891b2;}
-.stTabs [data-baseweb="tab-highlight"]{background:#0891b2;}
-[data-testid="stCaptionContainer"]{color:#64748b;}
+.stTabs button[role="tab"]{color:#8fa3c8;font-weight:600;}
+.stTabs button[aria-selected="true"]{color:#22d3ee;}
+.stTabs [data-baseweb="tab-highlight"]{background:#22d3ee;}
+[data-testid="stCaptionContainer"]{color:#8fa3c8;}
 ::-webkit-scrollbar{width:10px;height:10px;}
-::-webkit-scrollbar-track{background:#eef2f9;}
-::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#0891b2,#6d28d9);
- border-radius:8px;border:2px solid #eef2f9;}
-::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#0e7490,#5b21b6);}
-*{scrollbar-width:thin;scrollbar-color:#0891b2 #eef2f9;}
+::-webkit-scrollbar-track{background:#0a1020;}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#22d3ee,#7c3aed);
+ border-radius:8px;border:2px solid #0a1020;}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#67e8f9,#a78bfa);}
+*{scrollbar-width:thin;scrollbar-color:#22d3ee #0a1020;}
 </style>
 """
 
@@ -229,12 +228,12 @@ def style_fig(fig: go.Figure, h: int = 260, title: str | None = None,
               legend: bool = False) -> go.Figure:
     fig.update_layout(
         height=h, margin=dict(l=10, r=10, t=34 if title else 10, b=10),
-        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(248,250,252,0.7)",
-        font=dict(color="#1e293b", size=12, family="Segoe UI, system-ui, sans-serif"),
+        paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(9,15,30,0.45)",
+        font=dict(color="#c9d9f7", size=12, family="Segoe UI, system-ui, sans-serif"),
         showlegend=legend, legend=dict(orientation="h", y=-0.18, bgcolor="rgba(0,0,0,0)"),
-        title=dict(text=title or "", font=dict(size=13, color="#475569")),
-        xaxis=dict(gridcolor="rgba(100,116,139,.16)", zeroline=False),
-        yaxis=dict(gridcolor="rgba(100,116,139,.16)", zeroline=False),
+        title=dict(text=title or "", font=dict(size=13, color="#9db4e6")),
+        xaxis=dict(gridcolor="rgba(110,140,210,.12)", zeroline=False),
+        yaxis=dict(gridcolor="rgba(110,140,210,.12)", zeroline=False),
         colorway=CHART_HUES)
     return fig
 
@@ -1096,20 +1095,20 @@ def wafer_fig(g: np.ndarray, bbox: tuple | None = None, label: str | None = None
     z = np.where(MASK, g.astype(float), np.nan)
     fig = go.Figure(go.Heatmap(
         z=z, zmin=0, zmax=2, showscale=False, xgap=1, ygap=1,
-        colorscale=[[0.0, "#e2e8f0"], [0.5, "#a5d8e6"], [1.0, "#db2777"]],
+        colorscale=[[0.0, "#0a1322"], [0.5, "#12455e"], [1.0, "#ff2d78"]],
         hovertemplate="die (%{x},%{y}) · state %{z}<extra></extra>"))
     fig.add_shape(type="circle", x0=-2.2, y0=-2.2, x1=GRID + 1.2, y1=GRID + 1.2,
-                  line=dict(color="rgba(8,145,178,0.5)", width=1.5))
+                  line=dict(color="rgba(34,211,238,0.35)", width=1.5))
     if bbox:
         x0, y0, x1, y1 = bbox
         fig.add_shape(type="rect", x0=x0 - 0.5, y0=y0 - 0.5, x1=x1 + 0.5, y1=y1 + 0.5,
-                      line=dict(color="#0891b2", width=2))
+                      line=dict(color="#22d3ee", width=2))
     if label:
         fig.add_annotation(x=GRID / 2, y=-2.6, text=label, showarrow=False,
-                           font=dict(color="#0891b2", size=11))
+                           font=dict(color="#22d3ee", size=11))
     fig.update_layout(height=235, margin=dict(l=2, r=2, t=26 if title else 4, b=2),
                       paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
-                      title=dict(text=title or "", font=dict(size=12, color="#475569")),
+                      title=dict(text=title or "", font=dict(size=12, color="#9db4e6")),
                       xaxis=dict(visible=False, range=[-3, GRID + 2]),
                       yaxis=dict(visible=False, range=[GRID + 2, -3], scaleanchor="x"))
     return fig
@@ -1156,19 +1155,19 @@ def case_visuals(c: dict) -> None:
 def event_feed(s: dict, n: int = 12) -> None:
     rows = []
     for ts, lvl, text in list(s["events"])[-n:][::-1]:
-        col = LEVEL_COLORS.get(lvl, "#2563eb")
+        col = LEVEL_COLORS.get(lvl, "#60a5fa")
         rows.append(f'<div class="evt" style="border-left-color:{col}">'
                     f'<span class="evt-t">{ts.strftime("%H:%M")}</span>{_html.escape(text)}</div>')
     st.markdown("".join(rows) or '<div class="evt">No events yet.</div>', unsafe_allow_html=True)
 
 
 def case_chips(c: dict) -> None:
-    chips(chip(c["id"], "#0891b2"), chip(c["type"], "#6d28d9"),
-          chip(c["cls_pred"], CLASS_COLORS.get(c["cls_pred"], "#2563eb")),
-          chip(f"conf {c['conf']:.2f}", "#059669" if c["conf"] >= 0.9 else "#d97706"),
-          chip(f"risk {c['risk']}", "#e11d48" if c["risk"] == "high" else "#059669"),
-          chip(c["route"], ROUTE_COLORS.get(c["route"], "#2563eb")),
-          chip(c["status"], "#64748b"), chip(c["action_status"], "#ea580c"))
+    chips(chip(c["id"], "#22d3ee"), chip(c["type"], "#8b5cf6"),
+          chip(c["cls_pred"], CLASS_COLORS.get(c["cls_pred"], "#60a5fa")),
+          chip(f"conf {c['conf']:.2f}", "#34d399" if c["conf"] >= 0.9 else "#fbbf24"),
+          chip(f"risk {c['risk']}", "#f43f5e" if c["risk"] == "high" else "#34d399"),
+          chip(c["route"], ROUTE_COLORS.get(c["route"], "#60a5fa")),
+          chip(c["status"], "#8fa3c8"), chip(c["action_status"], "#fb923c"))
 
 
 def feedback_buttons(s: dict, c: dict, role: str, prefix: str) -> None:
@@ -1280,20 +1279,20 @@ def page_live(s: dict, role: str) -> None:
     ov = s["counters"]["overrides"] / max(1, s["counters"]["reviewed"])
     lead = f"{s['last_lead']:.1f} h" if s["last_lead"] else "armed"
     kpi_grid([
-        ("Wafers processed", f"{n:,}", "since boot · live", "#0891b2"),
-        ("Automation rate", pct(auto_rate), "auto + act/notify", "#059669"),
-        ("Pending approvals", str(len(pending)), "human inbox", "#d97706"),
-        ("Active excursions", str(active_exc), "CUSUM/EWMA alarms", "#e11d48" if active_exc else "#059669"),
-        ("Est. savings", money(s["savings"]), "session · model-based", "#059669"),
-        ("Detection lead", lead, "engine vs SPC-3σ", "#6d28d9"),
-        ("Pipeline p95", f"{p95:.0f} ms", "target < 300 ms", "#0891b2"),
-        ("Override rate", pct(ov), "human edits/rejects", "#ea580c"),
+        ("Wafers processed", f"{n:,}", "since boot · live", "#22d3ee"),
+        ("Automation rate", pct(auto_rate), "auto + act/notify", "#34d399"),
+        ("Pending approvals", str(len(pending)), "human inbox", "#fbbf24"),
+        ("Active excursions", str(active_exc), "CUSUM/EWMA alarms", "#f43f5e" if active_exc else "#34d399"),
+        ("Est. savings", money(s["savings"]), "session · model-based", "#34d399"),
+        ("Detection lead", lead, "engine vs SPC-3σ", "#8b5cf6"),
+        ("Pipeline p95", f"{p95:.0f} ms", "target < 300 ms", "#22d3ee"),
+        ("Override rate", pct(ov), "human edits/rejects", "#fb923c"),
     ])
-    chips(chip(f"🛡 security blocks {s['counters']['security']}", "#db2777"),
-          chip(f"📮 dead-letter {len(s['dlq'])}", "#ea580c"),
-          chip(f"⚡ cache hits {s['counters']['cache_hits']}", "#2563eb"),
-          chip(f"🏷 labeling queue {len(s['al_queue'])}", "#d97706"),
-          chip(f"🧠 {train_wafer_model(s['model_version'], tuple(s['buffer']))['name']}", "#6d28d9"),
+    chips(chip(f"🛡 security blocks {s['counters']['security']}", "#ff2d78"),
+          chip(f"📮 dead-letter {len(s['dlq'])}", "#fb923c"),
+          chip(f"⚡ cache hits {s['counters']['cache_hits']}", "#60a5fa"),
+          chip(f"🏷 labeling queue {len(s['al_queue'])}", "#fbbf24"),
+          chip(f"🧠 {train_wafer_model(s['model_version'], tuple(s['buffer']))['name']}", "#8b5cf6"),
           chip(f"🌱 seed {s['seed']}", "#64748b"))
     if s["kill"]:
         st.error("🛑 KILL SWITCH ENGAGED — autonomy halted; every decision routes to humans.")
@@ -1306,17 +1305,17 @@ def page_live(s: dict, role: str) -> None:
     pulse = df["rate"].rolling(14, min_periods=1).mean()
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=df["ts"], y=pulse, name="fab rolling defect rate",
-                             line=dict(color="#0891b2", width=2)))
+                             line=dict(color="#22d3ee", width=2)))
     et = df[df["tool"] == DRIFT_TOOL]
     fig.add_trace(go.Scatter(x=et["ts"], y=et["rate"].rolling(8, min_periods=1).mean(),
-                             name=f"{DRIFT_TOOL} (drift target)", line=dict(color="#db2777", width=2)))
-    fig.add_hline(y=s["baseline"], line=dict(color="#d97706", dash="dash", width=1),
-                  annotation_text="fab baseline", annotation_font_color="#d97706")
+                             name=f"{DRIFT_TOOL} (drift target)", line=dict(color="#ff2d78", width=2)))
+    fig.add_hline(y=s["baseline"], line=dict(color="#fbbf24", dash="dash", width=1),
+                  annotation_text="fab baseline", annotation_font_color="#fbbf24")
     for ts, tool, kind in list(s["alarm_marks"])[-8:]:
-        fig.add_vline(x=pd.Timestamp(ts), line_color="#e11d48" if kind == "engine" else "#d97706",
+        fig.add_vline(x=pd.Timestamp(ts), line_color="#f43f5e" if kind == "engine" else "#fbbf24",
                       line_width=1.5, line_dash="dot",
                       annotation_text="ENGINE" if kind == "engine" else "SPC-3σ",
-                      annotation_font_color="#e11d48" if kind == "engine" else "#d97706",
+                      annotation_font_color="#f43f5e" if kind == "engine" else "#fbbf24",
                       annotation_font_size=10)
     style_fig(fig, 280, "Fab pulse · excursion detection timeline", legend=True)
     fig.update_yaxes(tickformat=".0%")
@@ -1328,11 +1327,11 @@ def page_live(s: dict, role: str) -> None:
         for tname in TOOLS:
             tt = s["tools"][tname]
             means.append(float(np.mean(tt["rates"])) if tt["rates"] else 0.0)
-            cols_.append("#e11d48" if tt["alarm"] else "#0891b2")
+            cols_.append("#f43f5e" if tt["alarm"] else "#22d3ee")
         f2 = go.Figure(go.Bar(x=TOOLS, y=means, marker_color=cols_,
                               text=[f"{m:.1%}" for m in means], textposition="outside"))
-        f2.add_hline(y=s["baseline"], line=dict(color="#d97706", dash="dash"),
-                     annotation_text="baseline", annotation_font_color="#d97706")
+        f2.add_hline(y=s["baseline"], line=dict(color="#fbbf24", dash="dash"),
+                     annotation_text="baseline", annotation_font_color="#fbbf24")
         style_fig(f2, 250, "Tool attribution · recent defect rate")
         f2.update_yaxes(tickformat=".0%", range=[0, max(0.12, max(means) * 1.35)])
         chart(f2)
@@ -1386,22 +1385,22 @@ def page_live(s: dict, role: str) -> None:
         st.markdown('<div class="panel-tag">50k-wafer replay · injected ETCH-02 drift</div>',
                     unsafe_allow_html=True)
         kpi_grid([
-            ("Engine detection", f"t = {r['det_h']:.1f} h", "CUSUM + EWMA", "#0891b2"),
-            ("SPC-3σ detection", f"t = {r['spc_h']:.1f} h", "sustained 3-point rule", "#d97706"),
-            ("Detection lead", f"{r['lead']:.1f} h", "target ≥ 2 h", "#059669" if r["lead"] >= 2 else "#d97706"),
-            ("Wafers protected", f"{r['wafers_saved']:,}", "vs SPC baseline", "#6d28d9"),
-            ("Scrap avoided", money(r["value"]), "≈35% recovery value", "#059669"),
+            ("Engine detection", f"t = {r['det_h']:.1f} h", "CUSUM + EWMA", "#22d3ee"),
+            ("SPC-3σ detection", f"t = {r['spc_h']:.1f} h", "sustained 3-point rule", "#fbbf24"),
+            ("Detection lead", f"{r['lead']:.1f} h", "target ≥ 2 h", "#34d399" if r["lead"] >= 2 else "#fbbf24"),
+            ("Wafers protected", f"{r['wafers_saved']:,}", "vs SPC baseline", "#8b5cf6"),
+            ("Scrap avoided", money(r["value"]), "≈35% recovery value", "#34d399"),
         ])
         step = 25
         rr = pd.Series(r["rates"]).rolling(200, min_periods=1).mean().to_numpy()[::step]
         hh = r["hours"][::step]
         fr = go.Figure()
         fr.add_trace(go.Scatter(x=hh, y=rr, name="fab defect rate (rolling)",
-                                line=dict(color="#0891b2", width=2)))
-        fr.add_vrect(x0=r["drift_h"], x1=float(r["hours"][-1]), fillcolor="rgba(219,39,119,0.08)",
-                     line_width=0, annotation_text="drift window", annotation_font_color="#db2777")
-        for xv, name, col in [(r["det_h"], "ENGINE", "#e11d48"), (r["spc_h"], "SPC-3σ", "#d97706"),
-                              (r["manual_h"], "MANUAL +6h", "#64748b")]:
+                                line=dict(color="#22d3ee", width=2)))
+        fr.add_vrect(x0=r["drift_h"], x1=float(r["hours"][-1]), fillcolor="rgba(255,45,120,0.07)",
+                     line_width=0, annotation_text="drift window", annotation_font_color="#ff2d78")
+        for xv, name, col in [(r["det_h"], "ENGINE", "#f43f5e"), (r["spc_h"], "SPC-3σ", "#fbbf24"),
+                              (r["manual_h"], "MANUAL +6h", "#8fa3c8")]:
             fr.add_vline(x=xv, line_color=col, line_dash="dot",
                          annotation_text=name, annotation_font_color=col)
         style_fig(fr, 280, "Before / after · engine vs SPC vs manual triage", legend=True)
@@ -1462,10 +1461,10 @@ def page_approvals(s: dict, role: str) -> None:
         return
     for c in pending[:8]:
         with st.container():
-            border = "#e11d48" if c["type"] == "EXCURSION" else "#d97706"
+            border = "#f43f5e" if c["type"] == "EXCURSION" else "#fbbf24"
             st.markdown(f'<div style="border:1px solid {_rgba(border,.5)};border-left:4px solid {border};'
                         f'border-radius:12px;padding:10px 14px;margin-bottom:4px;'
-                        f'background:#ffffff">'
+                        f'background:rgba(13,22,40,.6)">'
                         f'<b style="color:{border}">{"🚨 EXCURSION" if c["type"]=="EXCURSION" else "🧑‍⚖️ REVIEW"}</b>'
                         f' · {c["id"]} · {c["tool"]} · {c["ts"].strftime("%H:%M")}</div>',
                         unsafe_allow_html=True)
@@ -1482,10 +1481,10 @@ def page_models(s: dict, role: str) -> None:
     model = train_wafer_model(s["model_version"], tuple(s["buffer"]))
     sem = train_sem_model()
     kpi_grid([
-        ("Wafer model", model["name"], f"holdout acc {model['acc']:.1%} · n={model['n_train']}", "#0891b2"),
-        ("SEM model", sem["name"], f"train acc {sem['acc']:.1%} · {len(sem['cents'])+(1 if s['sem_extra'] else 0)} classes", "#6d28d9"),
-        ("Gateway mode", "LOCAL", "rules fallback armed · zero external calls", "#059669"),
-        ("Feedback buffer", str(len(s["buffer"])), f"fallbacks used: {s['counters']['fallbacks']}", "#d97706"),
+        ("Wafer model", model["name"], f"holdout acc {model['acc']:.1%} · n={model['n_train']}", "#22d3ee"),
+        ("SEM model", sem["name"], f"train acc {sem['acc']:.1%} · {len(sem['cents'])+(1 if s['sem_extra'] else 0)} classes", "#8b5cf6"),
+        ("Gateway mode", "LOCAL", "rules fallback armed · zero external calls", "#34d399"),
+        ("Feedback buffer", str(len(s["buffer"])), f"fallbacks used: {s['counters']['fallbacks']}", "#fbbf24"),
     ])
     t1, t2, t3 = st.tabs(["📏 Gold-set evaluation", "🧬 Few-shot new class", "🔁 Improvement loop & agents"])
     with t1:
@@ -1497,11 +1496,11 @@ def page_models(s: dict, role: str) -> None:
         if g:
             ok = g["acc"] > 0.96
             chips(chip(f"accuracy {g['acc']:.2%} {'✓ target >96%' if ok else '△ below 96% target'}",
-                       "#059669" if ok else "#d97706"),
-                  chip(f"ECE {g['ece']:.3f}", "#6d28d9"),
-                  chip(f"infer p50 {g['p50']:.1f} ms", "#0891b2"),
-                  chip(f"p95 {g['p95']:.1f} ms", "#0891b2"),
-                  chip(f"cost/case ≈ ${0.00025 + g['p95']/1000*0.12/3600*4:.5f}", "#2563eb"),
+                       "#34d399" if ok else "#fbbf24"),
+                  chip(f"ECE {g['ece']:.3f}", "#8b5cf6"),
+                  chip(f"infer p50 {g['p50']:.1f} ms", "#22d3ee"),
+                  chip(f"p95 {g['p95']:.1f} ms", "#22d3ee"),
+                  chip(f"cost/case ≈ ${0.00025 + g['p95']/1000*0.12/3600*4:.5f}", "#60a5fa"),
                   chip(g["model"], "#64748b"))
             c1, c2 = st.columns(2)
             with c1:
@@ -1509,7 +1508,7 @@ def page_models(s: dict, role: str) -> None:
                 f = go.Figure(go.Heatmap(z=cmn, x=CLASSES, y=CLASSES, showscale=False,
                                          text=g["cm"], texttemplate="%{text}",
                                          textfont=dict(size=10),
-                                         colorscale=[[0, "#f1f5f9"], [0.5, "#67b7cc"], [1, "#be185d"]],
+                                         colorscale=[[0, "#0b1424"], [0.5, "#155e75"], [1, "#ff2d78"]],
                                          hovertemplate="true %{y} → pred %{x}<extra></extra>"))
                 style_fig(f, 330, "Confusion matrix (row-normalized)")
                 f.update_xaxes(title_text="predicted").update_yaxes(title_text="true", autorange="reversed")
@@ -1542,11 +1541,11 @@ def page_models(s: dict, role: str) -> None:
         if sh:
             ok = sh["after"][2] >= 0.85
             kpi_grid([
-                ("F1 before (0-shot)", f"{sh['before'][2]:.2f}", "class unknown", "#e11d48"),
+                ("F1 before (0-shot)", f"{sh['before'][2]:.2f}", "class unknown", "#f43f5e"),
                 ("F1 after (20-shot)", f"{sh['after'][2]:.2f}",
-                 "✓ target ≥0.85" if ok else "△ below target", "#059669" if ok else "#d97706"),
-                ("Precision", f"{sh['after'][0]:.2f}", "held-out 100 images", "#0891b2"),
-                ("Recall", f"{sh['after'][1]:.2f}", "held-out 100 images", "#0891b2"),
+                 "✓ target ≥0.85" if ok else "△ below target", "#34d399" if ok else "#fbbf24"),
+                ("Precision", f"{sh['after'][0]:.2f}", "held-out 100 images", "#22d3ee"),
+                ("Recall", f"{sh['after'][1]:.2f}", "held-out 100 images", "#22d3ee"),
             ])
             cols = st.columns(5)
             for col, img in zip(cols, sh["samples"]):
@@ -1604,7 +1603,7 @@ def page_models(s: dict, role: str) -> None:
                              "Errors": errs[agent], "Heartbeat": s["clock"].strftime("%H:%M:%S")})
             table(pd.DataFrame(rows))
             f = go.Figure(go.Histogram(x=[c["latency_ms"] for c in s["cases"][-200:]],
-                                       nbinsx=30, marker_color="#0891b2", opacity=0.85))
+                                       nbinsx=30, marker_color="#22d3ee", opacity=0.85))
             style_fig(f, 220, "End-to-end pipeline latency (ms)")
             chart(f)
 
@@ -1613,12 +1612,12 @@ def page_policy(s: dict, role: str) -> None:
     st.subheader("🛡️ Autonomy policy & audit")
     admin = role == "Admin"
     pol = s["policy"]
-    chips(chip(f"auto ≥ {pol['auto']:.2f}", "#059669"),
-          chip(f"notify ≥ {pol['notify']:.2f}", "#0891b2"),
-          chip(f"high-risk rate > {pol['risk_rate']:.2f}", "#e11d48"),
-          chip(f"rate limit {pol['rate_limit']}/10min", "#d97706"),
-          chip("DRY-RUN" if pol["dry_run"] else "LIVE ACTIONS", "#6d28d9" if pol["dry_run"] else "#059669"),
-          chip("KILL ENGAGED" if s["kill"] else "kill switch ready", "#e11d48" if s["kill"] else "#64748b"))
+    chips(chip(f"auto ≥ {pol['auto']:.2f}", "#34d399"),
+          chip(f"notify ≥ {pol['notify']:.2f}", "#22d3ee"),
+          chip(f"high-risk rate > {pol['risk_rate']:.2f}", "#f43f5e"),
+          chip(f"rate limit {pol['rate_limit']}/10min", "#fbbf24"),
+          chip("DRY-RUN" if pol["dry_run"] else "LIVE ACTIONS", "#8b5cf6" if pol["dry_run"] else "#34d399"),
+          chip("KILL ENGAGED" if s["kill"] else "kill switch ready", "#f43f5e" if s["kill"] else "#64748b"))
     left, right = st.columns([1, 1.3])
     with left:
         st.markdown('<div class="panel-tag">Threshold editor · simulate before apply</div>',
@@ -1670,7 +1669,7 @@ def page_policy(s: dict, role: str) -> None:
         cats = ["Auto act", "Act+notify", "Human review", "Blocked/Halted"]
         f = go.Figure()
         f.add_trace(go.Bar(x=cats, y=[cur[c] for c in cats], name="current", marker_color="#64748b"))
-        f.add_trace(go.Bar(x=cats, y=[prop[c] for c in cats], name="proposed", marker_color="#0891b2"))
+        f.add_trace(go.Bar(x=cats, y=[prop[c] for c in cats], name="proposed", marker_color="#22d3ee"))
         f.update_layout(barmode="group")
         style_fig(f, 300, "Routing distribution · current vs proposed", legend=True)
         chart(f)
@@ -1741,11 +1740,11 @@ def page_roi(s: dict, role: str) -> None:
     r = roi_compute(p)
     with right:
         kpi_grid([
-            ("Net annual savings", money(r["net"]), "after license", "#059669" if r["net"] > 0 else "#e11d48"),
+            ("Net annual savings", money(r["net"]), "after license", "#34d399" if r["net"] > 0 else "#f43f5e"),
             ("Payback", f"{r['payback']:.1f} mo" if math.isfinite(r["payback"]) else "—",
-             "license / monthly gross", "#0891b2"),
-            ("ROI", f"{r['roi_pct']:.0f}%", "net / license", "#6d28d9"),
-            ("Wafers saved / yr", f"{r['saved_wafers']:,.0f}", "earlier excursion holds", "#d97706"),
+             "license / monthly gross", "#22d3ee"),
+            ("ROI", f"{r['roi_pct']:.0f}%", "net / license", "#8b5cf6"),
+            ("Wafers saved / yr", f"{r['saved_wafers']:,.0f}", "earlier excursion holds", "#fbbf24"),
         ])
         f = go.Figure(go.Waterfall(
             x=["Scrap avoided", "Review labor", "Yield uplift", "License", "Net"],
@@ -1754,10 +1753,10 @@ def page_roi(s: dict, role: str) -> None:
             text=[money(r["scrap"]), money(r["labor"]), money(r["yield"]),
                   money(-p["lic"]), money(r["net"])],
             textposition="outside",
-            increasing=dict(marker=dict(color="#059669")),
-            decreasing=dict(marker=dict(color="#e11d48")),
-            totals=dict(marker=dict(color="#0891b2")),
-            connector=dict(line=dict(color="rgba(100,116,139,.4)"))))
+            increasing=dict(marker=dict(color="#34d399")),
+            decreasing=dict(marker=dict(color="#f43f5e")),
+            totals=dict(marker=dict(color="#22d3ee")),
+            connector=dict(line=dict(color="rgba(140,160,220,.4)"))))
         style_fig(f, 320, "Annual value composition ($)")
         chart(f)
         drivers = [("Excursions/mo", "e"), ("Wafer value", "val"), ("Detection gap", "gap")]
@@ -1774,9 +1773,9 @@ def page_roi(s: dict, role: str) -> None:
             names.append(name + " ±30%")
         ft = go.Figure()
         ft.add_trace(go.Bar(y=names, x=lows, orientation="h", name="downside",
-                            marker_color="#d97706"))
+                            marker_color="#fbbf24"))
         ft.add_trace(go.Bar(y=names, x=highs, orientation="h", name="upside",
-                            marker_color="#0891b2"))
+                            marker_color="#22d3ee"))
         ft.update_layout(barmode="relative")
         style_fig(ft, 240, "Sensitivity · Δ net savings vs base ($/yr)", legend=True)
         chart(ft)
@@ -1823,7 +1822,7 @@ def reboot() -> None:
 def render_sidebar(s: dict) -> None:
     with st.sidebar:
         st.markdown('<div style="font-weight:800;font-size:1.05rem;'
-                    'background:linear-gradient(90deg,#0891b2,#6d28d9,#db2777);'
+                    'background:linear-gradient(90deg,#22d3ee,#8b5cf6,#ff2d78);'
                     '-webkit-background-clip:text;background-clip:text;color:transparent">'
                     '⬡ WAFERSENSE RCA</div>'
                     '<div style="color:#64748b;font-size:.68rem;letter-spacing:.1em;'
@@ -1899,21 +1898,21 @@ def render_sidebar(s: dict) -> None:
 
 
 def render_header(s: dict) -> None:
-    state = ("LIVE", "#059669") if s["playing"] else ("PAUSED", "#64748b")
+    state = ("LIVE", "#34d399") if s["playing"] else ("PAUSED", "#64748b")
     extra = ""
     if s["kill"]:
-        extra += chip("KILLED", "#e11d48")
+        extra += chip("KILLED", "#f43f5e")
     if s["mes_down"]:
-        extra += chip("DEGRADED", "#ea580c")
+        extra += chip("DEGRADED", "#fb923c")
     if s["severity"] > 0:
-        extra += chip(f"DRIFT {s['severity']:.2f}", "#db2777")
+        extra += chip(f"DRIFT {s['severity']:.2f}", "#ff2d78")
     st.markdown(
         f'<div class="hdr"><div>'
         f'<div class="hdr-title">Semiconductor Wafer Defect Classification &amp; Root-Cause Engine</div>'
         f'<div class="hdr-sub">wafer maps · SEM · tool correlation · governed autonomy · audit replay</div>'
         f'</div><div style="text-align:right">'
-        f'{chip("● " + state[0], state[1])}{chip("FAB-DEMO-01", "#0891b2")}'
-        f'{chip(st.session_state.sel_role, "#6d28d9")}{extra}'
+        f'{chip("● " + state[0], state[1])}{chip("FAB-DEMO-01", "#22d3ee")}'
+        f'{chip(st.session_state.sel_role, "#8b5cf6")}{extra}'
         f'<div style="color:#64748b;font-size:.72rem;font-family:ui-monospace,Consolas,monospace">'
         f'⏱ {s["clock"].strftime("%b %d · %H:%M:%S")} (fab clock)</div>'
         f'</div></div>', unsafe_allow_html=True)
